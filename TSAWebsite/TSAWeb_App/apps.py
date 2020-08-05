@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class TsawebConfig(AppConfig):
-    name = 'TSAWeb'
+    name = 'TSAWeb_App'
