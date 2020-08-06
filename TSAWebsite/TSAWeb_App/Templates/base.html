@@ -3,8 +3,9 @@
 {% csrf_token %}
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -16,11 +17,11 @@
 
 <nav class="blue">
 
-    <div class="nav-wrapper">
-        <a href="/home"><img src=""></i>Dulles High School TSA</a>
-    <a href="/home">
-    <img src="" alt="TSA Logo" style="width:42px;height:42px;">
+    <div class="nav-wrapper",class="logo">
+        <a href="/home">
+            <img src="https://i.ibb.co/s96RfGh/tsalogo1.jpg" alt="TSA Logo" height="100%">
         </a>
+        <a href="/home"></i>Dulles High School TSA</a>
       <ul class="right hide-on-med-and-down">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/home">Home</a></li>

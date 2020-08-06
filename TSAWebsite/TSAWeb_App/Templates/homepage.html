@@ -1,11 +1,15 @@
 {% extends "base.html" %}
+{% block more_head %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
+{% endblock %}
 {% block body %}
 <div class="MainBody">
 
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
          width="100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1 style="text-alignment:center">Dulles High School Technology Students Association</h1>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small", class="title">
+      <h1>Dulles High School</h1>
+        <h2>Technology Student Association</h2>
     </div>
 
 </div>
