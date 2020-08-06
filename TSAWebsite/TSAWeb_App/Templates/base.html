@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="static/base.css"/>
+    {% block extra_head %}{% endblock %}
+
+    <nav>
+        <div class = "logo">
+          <a href="/home">
+            <img src="static/tsa.png" alt="TSA Logo" >
+          </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/about_us">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</head>
+<!--<div class="wrapper">-->
+<body>
+    {% block content %}
+
+    {% endblock %}
+    <script src="static/base.js"></script>
+</body>
+<!--</div>-->
+</html>

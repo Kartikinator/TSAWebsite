@@ -1,18 +1,21 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+{% load static %}
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+{% block title %}
+Home
+{% endblock %}
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+{% block extra_head %}
+<meta name="description" content="Home Page">
+<meta name="author" content="TSA Web Developers">
+<link rel="stylesheet" type="text/css" href="static/home.css"/>
 
-</head>
+{% endblock %}
 
-<body>
-  <script src="js/scripts.js"></script>
-</body>
-</html>
+{% block content %}
+<div class="container">
+    <span class="text1">TSA</span>
+    <span class="text2">Technology Student Association</span>
+</div>
+{% endblock %}
