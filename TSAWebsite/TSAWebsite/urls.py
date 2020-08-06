@@ -16,7 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from TSAWeb_App.views import homepage, resources_page, contact_page, about_us_page, news_page
 urlpatterns = [
-    path('', include("TSAWeb_App.urls")),
     path('admin/', admin.site.urls),
+    path('', homepage, name='home'),
+    path('home', homepage, name='home'),
+    path('resources', resources_page, name='mission'),
+    path('news', news_page, name='projects'),
+    path('contact', contact_page, name='contact'),
+    path('about_us', about_us_page, name= 'about us')
+
 ]
