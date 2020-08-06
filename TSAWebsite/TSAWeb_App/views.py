@@ -18,5 +18,6 @@ def news_page(request, *args, **kwargs):
 def contact_page(request, *args, **kwargs):
     return render(request, "contact.html", {})
 
+
 def about_us_page(request, *args, **kwargs):
     return render(request, "about_us.html", {})

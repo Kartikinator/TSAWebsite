@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-{% load static %}
-{% csrf_token %}
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="static/base.css"/>
-    {% block extra_head %}{% endblock %}
+    <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <nav>
-        <div class = "logo">
-          <a href="/home">
-            <img src="static/tsa.png" alt="TSA Logo" >
-          </a>
-        </div>
-        <ul class="nav-links">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<nav class="blue">
+
+    <div class="nav-wrapper">
+        <a href="/"></a><img src=""></i>Dulles High School TSA</a>
+      <ul class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/home">Home</a></li>
             <li><a href="/resources">Resources</a></li>
             <li><a href="/news">News</a></li>
             <li><a href="/about_us">About Us</a></li>
             <li><a href="/contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</head>
-<!--<div class="wrapper">-->
-<body>
-    {% block content %}
 
-    {% endblock %}
-    <script src="static/base.js"></script>
-</body>
-<!--</div>-->
-</html>
+        </ul>
+    </div>
+
+
+</nav>
