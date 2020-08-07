@@ -26,3 +26,4 @@ def about_us_page(request, *args, **kwargs):
 
 def blog_page(request, *args, **kwargs):
     return render(request, "blog_posts.html", context={"blog_post": BlogPost.objects.all})
+
