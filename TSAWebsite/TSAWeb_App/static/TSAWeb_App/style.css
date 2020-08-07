@@ -1,3 +1,19 @@
-h1 {
-color: blue
+.home-title {
+color: white;
+text-align:center;
 }
+
+.one-line {
+white-space: nowrap;
+}
+
+.tsa-logo {
+position: relative;
+bottom: 2px;
+}
+
+.footer-gap-fill{
+padding-bottom: 10px
+}
+
+
