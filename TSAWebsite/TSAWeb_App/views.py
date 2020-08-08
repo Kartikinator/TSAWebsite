@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import BlogPost
+from .models import Officer
 
 
 # Create your views here.
@@ -21,9 +22,8 @@ def contact_page(request, *args, **kwargs):
 
 
 def about_us_page(request, *args, **kwargs):
-    return render(request, "about_us.html", {})
+    return render(request, "about_us.html", context={"officer": Officer.objects.all})
 
 
 def blog_page(request, *args, **kwargs):
     return render(request, "blog_posts.html", context={"blog_post": BlogPost.objects.all})
-

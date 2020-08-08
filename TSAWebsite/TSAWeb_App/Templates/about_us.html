@@ -5,7 +5,7 @@
 {% block body %}
 {% load static %}
 <head>
-<link rel="stylesheet" type="text/css" href="{% static 'TSAWeb_App/aboutus.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'TSAWeb_App/aboutus.css' %}">
 </head>
 <body>
 <div class="AboutUs">
@@ -16,22 +16,51 @@
         <h1 style="text-align:center; font-size:100px">About Us</h1>
     </div>
 </div>
-<h2 style="text-align:center">About This Club</h2>
-<p>We are a club.... "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."
+<div class="ActualText">
+    <h2 style="text-align:center">About This Club</h2>
+    <p>We are a club.... "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."
 
-</p>
-<h3 style="text-align:center">Our Leaders</h3>
-<p>Maybe The card like the blog? idk choose wisely lol</p>
+    </p>
+    <h3 style="text-align:center">Our Leaders</h3>
+
+    <div class="row">
+        {% for Officer in officer %}
+
+        <div class="col s12 m4">
+            <div class="card">
+                  <div class="card large">
+
+                <div class="card-image">
+                    <img src="{{ Officer.imageurl }}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">{{ Officer.officer_name }}</span>
+
+                    <p style="font-size:75%">{{ Officer.role }}</p>
+                    <p>{{ Officer.description }}</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        {% endfor %}
 
 
-<h4 style="text-align:center">About TSA</h4>
-<p>TSA, or the Technology student association...     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."</p>
+    </div>
+
+
+    <h4 style="text-align:center">About TSA</h4>
+    <p>TSA, or the Technology student association... labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+</div>
 </body>
 {% endblock %}
