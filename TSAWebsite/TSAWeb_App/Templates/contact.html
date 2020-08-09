@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block body %}
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'TSAWeb_App/contact.css' %}">
+</head>
+
+<body>
+<div class = "ContactUs">
+    <img src = "https://cdn.pixabay.com/photo/2012/08/27/14/19/evening-55067_1280.png" width = "100%">
+    <div class = "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+            style = "white-space:nowrap">
+        <h1 style = "text-align:center"><b>Our Socials</b></h1>
+    </div>
+</div>
+
+<div class = "MainBody">
+    <p style = "text-align: center">
+        <b>Find us at...</b>
+    </p>
+
+    <br>
+
+    <div class = "Contacts">
+        <a class = "Insta" href = "https://www.instagram.com/dulles.tsa/">
+            <figure>
+                <img src = "https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png"
+                        width = "10%" height = "10%">
+                <figcaption>Instagram</figcaption>
+            </figure>
+        </a>
+
+
+        <a class = "Gmail" href = "mailto:dulles.tsa@gmail.com">
+            <figure>
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/4/45/New_Logo_Gmail.svg"
+                        width = "10%" height = "10%">
+                <figcaption>Gmail</figcaption>
+            </figure>
+        </a>
+
+        <a class = "Discord" href = "https://discord.gg/uYFVqsy">
+            <figure>
+                <img src = "https://discord.com/assets/41484d92c876f76b20c7f746221e8151.svg"
+                        width = "10%" height = "10%">
+                <figcaption>Discord</figcaption>
+            </figure>
+        </a>
+
+        <a class = "Twitter" href = "localhost:8000/contact">
+            <figure>
+                <img src = "http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
+                        width = "10%" height = "10%">
+                <figcaption>Twitter</figcaption>
+            </figure>
+        </a>
+
+        <a class = "Remind" href = "localhost:8000/contact">
+            <figure>
+                <img src = "https://www.pngkit.com/png/full/97-972295_remind-logo-blue.png"
+                        width = "10%" height = "10%">
+                <figcaption>Remind</figcaption>
+            </figure>
+        </a>
+
+    </div>
+</div>
+
+</body>
+
+{% endblock %}
