@@ -1,0 +1,23 @@
+body{
+background-image: url("https://besthqwallpapers.com/img/original/68983/microchip-neon-lines-black-background-chips-technology-backgrounds.jpg");
+}
+body {
+  position: relative;
+  padding-bottom: 58px;
+  min-height: 100vh;
+}
+main {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media(max-width:768px) {
+  header { padding: 30px 20px; }
+  header p { font-size: 18px; }
+  main { width: 100vw; padding: 20px; }
+}
