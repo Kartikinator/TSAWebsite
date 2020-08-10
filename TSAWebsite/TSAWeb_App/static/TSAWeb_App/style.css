@@ -1,29 +1,27 @@
-.home-title {
-color: white;
-text-align:center;
+h1{
+padding-bottom:125px;
+
 }
 
-.one-line {
-white-space: nowrap;
+p{
+font-size:20px;
 }
 
-.tsa-logo {
-position: relative;
-bottom: 2px;
+.Contacts {
+  display: flex;
+  align-items: center;
 }
 
-.footer-gap-fill{
-padding-bottom: 10px
+.Contacts figure {
+  flex: 1;
+  text-align: center;
 }
 
-nav{
-color:#192841;
+.MainBody{
+border:10px solid black;
+background-color:#02075D;
+color:white;
 }
-footer{
-width:100%;
-}
 
-
-
-
-
+a{
+color:white;
