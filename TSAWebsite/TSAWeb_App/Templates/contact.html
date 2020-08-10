@@ -8,36 +8,42 @@
 </head>
 
 <body>
-    <div class = "ContactUs">
+    <div class = "Contacts">
         <img src = "https://cdn.pixabay.com/photo/2012/08/27/14/19/evening-55067_1280.png" width = "100%">
         <div class = "w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
                 style = "white-space:nowrap">
             <h1 style = "text-align:center"><b>Our Socials</b></h1>
         </div>
     </div>
-    <div class="container">
-        <span class="text1">Contact Us</span>
+<div class="box center">
+
+    <div class="center">
+        <img src="https://i.ibb.co/4RYtqGc/tsalogo1.jpg" alt="TSA Logo" style="margin-top: 20px" width="30%">
+        <div class="contact-title">
+            <p>Let us know here if you have any questions!</p>
+        </div>
     </div>
+    <div class="contact-form">
+      <form style="text-align:center;" id="contact-form" method="post" action="static/TSAWeb_App/contact.php">
 
-    <div class="contact-title">
-        <h1>Any Questions?</h1>
-        <h1>We are always ready to answer your questions!</h1>
-    </div>
+        <p style="text-align: left;">Name*</p>
 
-    <div class="contact-form center">
-      <form id="contact-form" method="post" action="static/TSAWeb_App/contact.php">
+        <input style="background:#7377FC;border:1px solid gray;font-size: 18px;margin-top: 16px;margin-bottom: 16px;" name="name" type="text" class="form-control" placeholder="Your name" required><br>
 
-        <input name="name" type="text" class="form-control" placeholder="Your name" required><br>
+        <p style="text-align: left;">Email*</p>
 
-        <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
+        <input style="background:#7377FC;border:1px solid gray;font-size: 18px;margin-top: 16px;margin-bottom: 16px;" name="email" type="email" class="form-control" placeholder="Your email" required><br>
 
-        <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+        <p style="text-align: left;">Message*</p>
+
+        <textarea name="message" class="form-control" placeholder="Message" rows="4" required style="min-width: 100%; max-width: 100%"></textarea><br>
 
         <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
       </form>
 
     </div>
+</div>
     <div class = "MainBody">
     <p style = "text-align: center">
         <b>Find us at...</b>
